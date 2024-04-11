@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Сплав{% endblock %}
+
+{% block content %}
+    <h1>Сплав</h1>
+    <ul>
+    {% for item in water_rafting_equipment %}
+        <li>{{ item.id_duffle.name_duffle }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'add_to_water_rafting' %}" class="btn btn-primary">Добавить в "Сплав"</a>
+{% endblock %}

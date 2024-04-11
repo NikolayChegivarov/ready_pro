@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Велосипед{% endblock %}
+
+{% block content %}
+    <h1>Велосипед</h1>
+    <ul>
+    {% for item in bike_equipment %}
+        <li>{{ item.id_duffle.name_duffle }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'add_to_bike' %}" class="btn btn-primary">Добавить в "Велосипед"</a>
+{% endblock %}

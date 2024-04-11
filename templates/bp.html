@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}БП{% endblock %}
+
+{% block content %}
+    <h1>БП</h1>
+    <ul>
+    {% for item in bp_equipment %}
+        <li>{{ item.id_duffle.name_duffle }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'add_to_bp' %}" class="btn btn-primary">Добавить в "БП"</a>
+{% endblock %}

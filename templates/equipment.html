@@ -1,0 +1,16 @@
+<!-- templates/equipment.html -->
+{% extends "base.html" %}
+
+{% block title %}Снаряжение{% endblock %}
+
+{% block content %}
+    <h1>Снаряжение</h1>
+    <ul>
+    {% for item in equipment %}
+        <li>{{ item.name_duffle }} - {{ item.heft }} кг</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'create_duffle' %}" class="btn btn-primary">Создать снаряжение</a>
+    <a href="{% url 'create_category' %}" class="btn btn-primary">Создать категорию</a>
+    <a href="{% url 'create_warehouse' %}" class="btn btn-primary">Создать склад</a>
+{% endblock %}
