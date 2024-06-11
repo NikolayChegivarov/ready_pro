@@ -1,0 +1,35 @@
+/* Ваш существующий CSS код */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует содержимое по вертикали */
+    height: 100vh;
+    background-image: url("/static/ready_pro/images/scale_1200.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2em;
+    color: red;   /* Цвет заголовка. */
+    margin-left: 20px;  /* Сместить заголовок влево. */
+    margin-top: -400px;  /* Сместить заголовок выше. */
+}
+
+/* Добавленные стили */
+.content-container {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center; /* Центрирует элементы по вертикали */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    height: 100vh;
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально. */
+    gap: 10px; /* Добавляет пространство между кнопками. */
+    margin-top: 20px; /* Добавляет отступ сверху для кнопок. */
+    margin-left: auto;  /* Смещение в лево. */
+}
